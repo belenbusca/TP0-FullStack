@@ -1,0 +1,10 @@
+.cards{
+    display: flex; /* contenedor flexible*/
+    justify-content: center; /* Alinear los items de manera centrado*/
+    flex-wrap: wrap; /* se sobrepasa se crea abajo*/
+}
+
+.card{
+    background: crimson;
+    flex: 0 1 15%;
+}
