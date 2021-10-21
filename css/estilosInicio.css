@@ -1,53 +1,112 @@
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  width: 100%;
 }
 
 /* HEADER */
 header{
-  background-color: darkcyan;
+  background-color: rgb(122, 6, 133);
   display: flex;
-  height: 85px;
-  /*width: 100vw;*/
+  height: 10vh;
   color: white;
   font-family: 'Balsamiq Sans', cursive;
-  justify-content: space-around;
   align-items: center;
-}
-
-.botones{
-  display: flex;
-  gap: 20px;
-}
-
-.header-button{
-  border-radius: 7px;
-  text-align: center;
-  font-size: 16px;
-  font-family: 'Roboto Condensed', sans-serif;
-  border: 2px solid white;
-  background-color: transparent;
-  color: white;
-  padding: 2px 9px;
-  cursor: pointer;
-  transition: background-color 0.5s ease-in-out;
-  text-decoration: none;
-}
-  
-.header-button:hover{
-  background-color: rgb(11, 172, 172);
+  padding-left: 15%;
 }
 /* FIN HEADER */
 
 
 /* NAV */
+nav{
+  padding: 3vh;
+}
 
+ul{
+  list-style-type: none;/*sacamos puntitos*/
+  display: flex;
+  justify-content: center;/*los ubicamos arriba*/
+}
+  
+ul li{
+  margin: 0.5em;/*Los separamos un poquito*/
+}
+ 
+li > a{
+  text-decoration:none ; /*sacamos subrayado*/
+  text-transform: uppercase;
+  font-size: 3vh;
+  font-family: 'Roboto Condensed', sans-serif;
+  color: black;
+  cursor: pointer;
+  transition: color 0.5s ease-in-out;
+}
+
+ li > a:hover{
+  color: rgb(132, 11, 156);
+}
 /* FIN NAV */
 
 
 /* MAIN */
+.contenedor{
+  position: relative;
+  text-align: center;
+}
 
+.centrado{
+  position: absolute;
+  top: 38%;
+  left: 38%;
+  font-size: 4vh;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.centrado > h3{
+  font-family: 'Rampart One', cursive;
+}
+
+#palabraAmor{
+  color: red;
+}
+
+.principal{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 5vh 33vh 5vh 33vh;
+}
+
+.descripcionYFoto{
+  display: flex;
+  gap: 15vh;
+}
+
+.descripcion{
+  width: 50%;
+}
+
+.descripcion > h2{
+  font-size: 4vh;
+  font-family: 'Roboto Condensed', sans-serif;
+  color: black;
+  margin-bottom: 5vh;
+}
+
+.descripcion > p, .descripcion > b{
+  margin-top: 5vh;
+  font-family: 'Abel', sans-serif;
+  font-size: 3vh;
+}
+
+.imgDescripcion{
+  margin-top: 9vh;
+  width: 50%;
+}
 /* FIN MAIN */
 
 
@@ -67,6 +126,7 @@ header{
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 2vh;
   }
   
   .contacto-icon{
@@ -74,7 +134,7 @@ header{
   }
   
   footer{
-    background-color: darkcyan;
+    background-color: rgb(122, 6, 133);
     color: white;
     display: flex;
     justify-content: center;
