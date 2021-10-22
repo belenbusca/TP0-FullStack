@@ -17,6 +17,7 @@ header{
   font-family: 'Balsamiq Sans', cursive;
   align-items: center;
   padding-left: 15%;
+  gap: 5%;
 }
 /* FIN HEADER */
 
@@ -33,13 +34,13 @@ ul{
 }
   
 ul li{
-  margin: 0.5em;/*Los separamos un poquito*/
+  margin: 0 2.5vh;/*Los separamos un poquito*/
 }
  
 li > a{
   text-decoration:none ; /*sacamos subrayado*/
   text-transform: uppercase;
-  font-size: 3vh;
+  font-size: 3.2vh;
   font-family: 'Roboto Condensed', sans-serif;
   color: black;
   cursor: pointer;
@@ -68,6 +69,12 @@ li > a{
 
 .centrado > h3{
   font-family: 'Rampart One', cursive;
+  color: rgba(0, 0, 0, 0.986);
+  margin-bottom: 2vh;
+}
+
+.centrado p{
+  font-size: 3.5vh;
 }
 
 #palabraAmor{
@@ -77,7 +84,6 @@ li > a{
 .principal{
   display: flex;
   flex-direction: column;
-  width: 100%;
   padding: 5vh 33vh 5vh 33vh;
 }
 
@@ -87,7 +93,7 @@ li > a{
 }
 
 .descripcion{
-  width: 50%;
+  width: 100%;
 }
 
 .descripcion > h2{
@@ -105,7 +111,6 @@ li > a{
 
 .imgDescripcion{
   margin-top: 9vh;
-  width: 50%;
 }
 /* FIN MAIN */
 
