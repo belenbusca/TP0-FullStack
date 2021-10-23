@@ -16,7 +16,7 @@ header{
   color: white;
   font-family: 'Balsamiq Sans', cursive;
   align-items: center;
-  padding-left: 15%;
+  padding-left: 25vh;
   gap: 5%;
 }
 /* FIN HEADER */
@@ -25,6 +25,7 @@ header{
 /* NAV */
 nav{
   padding: 3vh;
+  position: relative;
 }
 
 ul{
@@ -42,39 +43,54 @@ li > a{
   text-transform: uppercase;
   font-size: 3.2vh;
   font-family: 'Roboto Condensed', sans-serif;
-  color: black;
+  color: white;
   cursor: pointer;
   transition: color 0.5s ease-in-out;
 }
 
  li > a:hover{
-  color: rgb(132, 11, 156);
+  color: rgb(178, 80, 197);
 }
 /* FIN NAV */
 
 
 /* MAIN */
-.contenedor{
+.portada{
+  background-image: url("../fotos/portadaInicio.jpg");
+  background-blend-mode: darken;
+  height: 75vh;
+  background-position: center center;
+  background-size: cover;
   position: relative;
+}
+
+/* PARA OSCURECER LA IMAGEN DEL FONDO */
+.portada::before{
+  content:''; /* existe contenido */
+  position: absolute; /* para poder estirarlo */ 
+  top: 0; /* lo estiramos a todos los extremos de la portada */
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.26);
+}
+
+.portada section{
+  position: relative; /*Para que el texto este adelante del fondo negro transparente*/
+  color: white;
   text-align: center;
+  padding: 20vh 0;
 }
 
-.centrado{
-  position: absolute;
-  top: 38%;
-  left: 38%;
-  font-size: 4vh;
+.portada h2{
   font-family: 'Roboto Condensed', sans-serif;
-}
-
-.centrado > h3{
-  font-family: 'Rampart One', cursive;
-  color: rgba(0, 0, 0, 0.986);
+  font-size: 8vh;
   margin-bottom: 2vh;
 }
 
-.centrado p{
-  font-size: 3.5vh;
+.portada p{
+  font-family: 'Abel', sans-serif;
+  font-size: 4vh;
 }
 
 #palabraAmor{
@@ -84,7 +100,7 @@ li > a{
 .principal{
   display: flex;
   flex-direction: column;
-  padding: 5vh 33vh 5vh 33vh;
+  padding: 13vh 25vh 5vh 25vh;
 }
 
 .descripcionYFoto{
