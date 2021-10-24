@@ -128,6 +128,21 @@ li > a{
 .imgDescripcion{
   margin-top: 9vh;
 }
+
+.inferior{
+  display: flex;
+  justify-content: space-between;
+}
+
+.iframeYTitulo{
+  flex-direction: column;
+  padding: 13vh 25vh 5vh 25vh;
+}
+
+#imgIzquierdo{
+  margin-top: 17.5vh;  
+}
+
 /* FIN MAIN */
 
 
