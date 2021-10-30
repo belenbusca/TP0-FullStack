@@ -1,0 +1,306 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html{
+    width: 100%;
+  }
+  
+  /* HEADER */
+  header{
+    background-color: rgb(122, 6, 133);
+    display: flex;
+    height: 10vh;
+    color: white;
+    font-family: 'Balsamiq Sans', cursive;
+    align-items: center;
+    padding-left: 25vh;
+    gap: 5%;
+  }
+  /* FIN HEADER */
+  
+  
+  /* NAV */
+  nav{
+    padding: 3vh;
+    position: relative;
+  }
+  
+  ul{
+    list-style-type: none;/*sacamos puntitos*/
+    display: flex;
+    justify-content: center;/*los ubicamos arriba*/
+  }
+    
+  ul li{
+    margin: 0 2.5vh;/*Los separamos un poquito*/
+  }
+   
+  li > a{
+    text-decoration:none ; /*sacamos subrayado*/
+    text-transform: uppercase;
+    font-size: 3.2vh;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    transition: color 0.5s ease-in-out;
+  }
+  
+   li > a:hover{
+    color: rgb(178, 80, 197);
+  }
+  /* FIN NAV */
+
+/*MAIN*/
+.portada{
+    z-index: 1;
+    background-image: url("../fotos/FotoMascotas.jpg");
+    background-blend-mode: darken;
+    height: 75vh;
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+}
+
+.titulo{
+    display: flex;
+    gap: 25px;
+}
+  
+  
+h1{
+    font-family: 'Fira Sans', sans-serif;
+    padding: 40px 0 15px 260px;
+}
+  
+.icon-titulo{
+    font-size: 20px;
+    padding: 40px 0 0 0;
+}
+  
+form{
+    display: flex;
+    justify-content: center;
+    gap: 10vh;
+}
+  
+  
+  form fieldset{
+    border: 2px solid #A632D4;
+    border-radius: 15px;
+    padding: 25px;
+    height: 66vh;
+  }
+  
+  .titulos-form{
+    font-family: 'Fira Sans', sans-serif;
+    margin-bottom: 15px;
+  }
+  
+  form input{
+    width: 300px;
+    height: 45px;
+    border: none;
+    background-color: #f5f5f5;
+    color: #757575;
+    border-radius: 15px;
+    padding: 10px 12px;
+    font-size: 16px;
+  }
+  
+  textarea{
+    width: 300px;
+    height: 75px;
+    border: none;
+    background-color: #f5f5f5;
+    color: #757575;
+    border-radius: 15px;
+    padding: 10px 12px;
+    font-size: 16px;
+    font-family: 'Fira Sans', sans-serif;
+  }
+  
+  select{
+    display: inline-block;
+    width: 50%;
+    border: none;
+    background-color: #f5f5f5;
+    color: #757575;
+    border-radius: 15px;
+    padding: 10px 12px;
+  }
+  
+  select option{
+    text-align: center;
+  }
+  
+  #selectores{
+    display: flex;
+    gap: 5px;
+  }
+  
+  #selectores input{
+    display: inline-block;
+    width: 70%;
+  }
+  
+  .descripcion{
+    width: 300px;
+    height: 45px;
+    border: none;
+    background-color: #f5f5f5;
+    color: #757575;
+    border-radius: 15px;
+    padding: 10px 12px;
+    font-size: 16px;
+  }
+  
+  .formulario-foto{
+    margin-top: 35px;
+  }
+  
+  .boton-registrarse{
+    margin-top: 35px;
+    border-radius: 7px;
+    text-align: center;
+    font-size: 21px;
+    font-family: 'Roboto Condensed', sans-serif;
+    border: none;
+    background-color: #C281EA;
+    color: white;
+    padding: 6px 10px;
+    cursor: pointer;
+    transition: color 0.5s ease-in-out;
+    transition: border 0.5s ease-in-out;
+  }
+  
+  .boton-registrarse:hover{
+    color: rgb(220, 165, 236);
+  }
+  
+  
+  #dni select{
+    display: inline-block;
+    width: 30%;
+    border: none;
+    background-color: #f5f5f5;
+    color: #757575;
+    border-radius: 15px;
+    padding: 10px 12px;
+  }
+  
+  #dni{
+    display: flex;
+    gap: 5px;
+  }
+  
+  #dni input{
+    display: inline-block;
+    width: 70%;
+  }
+
+  .formaNotif{
+    font-size: 16px;
+    font-family: 'Fira Sans', sans-serif;
+  }
+  
+  .container{
+    display: block;
+    height: 5vh;
+    border-radius: 15px;
+    position: relative;
+    cursor: pointer;
+    padding: 2vh 0 0 10vh;
+  }
+  
+  .container input { /*Escondemos el default checkbox*/
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  .container input:checked ~ .checkmark {
+    background-color: #C281EA;
+  }
+  
+  .container input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  .checkmark{
+    position: absolute;
+    top: 1.5vh;
+    left: 20px;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    
+  }
+  
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the checkmark when checked */
+  .container input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Style the checkmark/indicator */
+  .container .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+  
+
+/*FIN MAIN*/  
+
+
+/* FOOTER */
+.contacto-general{
+    display: flex;
+    padding: 0px 350px;
+    justify-content: space-between;
+  }
+  
+  .contacto{
+    display: flex;
+    gap: 10px;
+  }
+  
+  .texto-contactanos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2vh;
+  }
+  
+  .contacto-icon{
+    font-size: 40px;
+  }
+  
+  footer{
+    background-color: rgb(122, 6, 133);
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+    margin-top: 50px;
+    font-family: 'Roboto Condensed', sans-serif;
+    flex-direction: column;
+    gap: 20px;
+  }
+/*FIN FOOTER*/

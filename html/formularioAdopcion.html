@@ -1,56 +1,226 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inicio</title>
+    <link rel="stylesheet" href="../css/estilosFormularioAdopcion.css">
+    <!-- .ICO -->
+    <link rel="icon" href="../fotos/huella.ico">
+    <style> @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,400;1,300&display=swap');</style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital@1&display=swap"
+      rel="stylesheet"
+    >
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400&display=swap"
+      rel="stylesheet"
+    >
+    <!-- PAGINAS ICONOS -->
+    <script
+      src="https://kit.fontawesome.com/d1f11e4bbc.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Material Icon CDN -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    >
+
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,400;1,300&display=swap" rel="stylesheet">
+    
+    <!-- FONT TEXTO LARGO -->
+    
+    <link href="https://fonts.googleapis.com/css2?family=Abel&family=Roboto+Condensed:ital,wght@0,300;1,400&display=swap" rel="stylesheet">
+  
+    <!-- FONT DE REFUGIO DE MASCOTAS -->
+    <link href="https://fonts.googleapis.com/css2?family=Rampart+One&display=swap" rel="stylesheet">
+
+    <!-- FONT DE MENU -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <form action="" name="formularioAdopcion">
+    <header>
+        <img src="../fotos/logoBlanco.png" alt="logo" width="5%">
+        <h2>Patitas</h2>
+    </header>
 
-        <label>Correo electrónico:
-            <input type="email" name="email" placeholder="Ingresa tu e-mail" required>
-        </label>
+    <main>
+        <section>
+            <div class="portada">
+                <nav>
+                    <ul>
+                      <li>
+                        <a href="inicio.html">Inicio</a>
+                      </li>
+                      <li>
+                        <a href="">Adopta</a>
+                      </li>
+                      <li>
+                        <a href="#">Categorias</a>
+                      </li>
+                    </ul>
+                </nav>
+                <div class="titulo">
+                    <h1>RFORMULARIO DE ADOPCION</h1>
+                    <div class="icon-titulo">
+                        <i class="fas fa-paw"></i>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <form
+              action="https://formspree.io/f/xwkawqpa"
+              method="post"
+              target="_blank"
+            >
+            <section class="datos-personales">
+                <fieldset>
+                  <h3 class="titulos-form">Datos personales</h3>
+                  <label>
+                    <input
+                      placeholder="Ingrese nombre completo"
+                      type="text"
+                      name="nombre"
+                      required
+                    />
+                  </label>
+                  <br />
+                  <br />
+                  <label>
+                    <input
+                      placeholder="Ingrese fecha de nacimiento:"
+                      type="text"
+                      name="fechaDeNacimiento"
+                      required
+                    />
+                  </label>
+                  <br />
+                  <br />
+                  <div id="dni">
+                    <select name="selector">
+                      <option value="DNI">DNI</option>
+                      <option value="Pasaporte">Pasaporte</option>
+                    </select>
+                    <input
+                      placeholder="Ingrese el número"
+                      type="text"
+                      name="numero"
+                    />
+                  </div>
+                  <br>
+                  <label>
+                    <input
+                      placeholder="Ingrese su número de telefono"
+                      type="text"
+                      name="numero de telefono"
+                    />
+                  </label>
+                  <br />
+                  <br />
+                  <label>
+                    <input
+                      placeholder="Ingrese su email"
+                      type="text"
+                      name="email"
+                    />
+                  </label>
+                  <br />
+                </fieldset>
+            </section>
+            
+    
+              <section class="usuario-foto">
+                <fieldset>
+                    <h3 class="titulos-form">Sobre la adopcion</h3>
+                    <label>
+                      <input
+                        placeholder="Ingrese nombre de la mascota"
+                        type="text"
+                        name="nombre"
+                        required
+                      />
+                    </label>
+                    <br />
+                    <br />
+                    <div>
+                        <textarea name="descripcion mascota" rows="10" cols="40">¿Por qué deseas adoptar esta mascota en especial? ... </textarea>
+                    </div>
+                    <br>
+                    <div class="formaNotif">
+                        <p>¿Actualmente tienes otras mascotas?</p>
+                          <br>
+                          <label class="container">SI
+                            <input
+                                type = "radio"
+                                name = "otrasMascotas"
+                                value = "SI"
+                            />
+                            <span class="checkmark"></span>
+                          </label>
+                          <br>
+                          <label class="container">NO
+                            <input
+                            type = "radio"
+                            name = "otrasMascotas"
+                            value = "NO"
+                            />
+                            <span class="checkmark"></span>
+                          </label>
+                          
+                    </div>
+                </fieldset>
+                
+                <button class="boton-registrarse" type="submit">Adoptar</button>
+              </section>
+            </form>
+          </section>
+        <section>
+    </main>
 
-        <label>Nombre:
-            <input type="text" name="nombre" required>
-        </label>
-
-        <label>Apellido:
-            <input type="text" name="apellido" required>
-        </label>
-
-        <p>Sos mayor de edad:</p>
-        <label>Si
-            <input type="radio" name="mayorEdad" value="Si">
-        </label>
-
-        <label>No
-            <input type="radio" name="mayorEdad" value="No">
-        </label>
-
-        <p>Indique fecha de Nacimiento:</p>
-        <label>
-            <input type="date" name="nacimiento" required>
-        </label>
-
-        <label>Nombre de la mascota para adoptar:
-            <input type="text" name="nombreMascota" required>
-        </label>
-
-        <label>¿Por qué deseas adoptar a esta mascota en especial?
-            <textarea name="motivoAdopcion" id="" cols="30" rows="10"></textarea>
-        </label>
-
-        <p>¿Actualmente tienes otras mascotas?</p>
-        <label>Si
-            <input type="radio" name="otrasMascotas" value="Si">
-        </label>
-
-        <label>No
-            <input type="radio" name="otrasMascotas" value="No">
-        </label>
-    </form>
+    <footer>
+        <section>
+          <div class="texto-contactanos">
+            <h3>CONTACTANOS!</h3>
+            <p>Ante cualquier duda no dude en consultarnos.</p>
+            <p>Estamos a su disposicion.</p>
+          </div>
+        </section>
+  
+        <section class="contacto-general">
+          <section class="contacto">
+            <div class="contacto-icon">
+              <i class="fas fa-envelope-square"></i>
+            </div>
+            <div class="contacto-info">
+              <p>MAIL</p>
+              <p>patitas@gmail.com</p>
+              <p></p>
+            </div>
+          </section>
+          <section class="contacto">
+            <div class="contacto-icon">
+                <i class="fab fa-facebook-square"></i>
+            </div>
+            <div class="contacto-info">
+              <p>FACEBOOK</p>
+              <p>PatitasOK</p>
+            </div>
+          </section>
+          <section class="contacto">
+              <div class="contacto-icon">
+                <i class="fas fa-phone-square-alt"></i>
+              </div>
+              <div class="contacto-info">
+                <p>TELEFONO</p>
+                <p>11 2345-6789</p>
+              </div>
+            </section>
+        </section>
+      </footer>
 </body>
 </html>
