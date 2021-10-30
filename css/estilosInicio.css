@@ -112,22 +112,26 @@ li > a{
   width: 100%;
 }
 
-.descripcion > h2{
+.descripcion > h2, .textoMapa > h2{
   font-size: 4vh;
   font-family: 'Roboto Condensed', sans-serif;
   color: black;
   margin-bottom: 5vh;
 }
 
-.descripcion > p, .descripcion > b{
+.descripcion > p, .descripcion > b, .textoMapa > p{
   margin-top: 5vh;
   font-family: 'Abel', sans-serif;
   font-size: 3vh;
 }
 
+.textoMapa{
+  padding-right: 25vh;
+}
+
 .imgDescripcion{
   margin-top: 9vh;
-}
+}    
 
 .inferior{
   display: flex;
