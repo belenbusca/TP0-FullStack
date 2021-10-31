@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Inicio</title>
+    <title>Formulario</title>
     <link rel="stylesheet" href="../css/estilosFormularioAdopcion.css">
     <!-- .ICO -->
     <link rel="icon" href="../fotos/huella.ico">
@@ -58,10 +58,10 @@
                         <a href="inicio.html">Inicio</a>
                       </li>
                       <li>
-                        <a href="">Formulario de Adopcion</a>
+                        <a href="perros.html">Categorias</a>
                       </li>
                       <li>
-                        <a href="#">Categorias</a>
+                        <a href="formularioAdopcion.html">Formulario de Adopcion</a>
                       </li>
                     </ul>
                 </nav>
@@ -110,6 +110,7 @@
                       placeholder="Ingrese el número"
                       type="text"
                       name="numero"
+                      required
                     />
                   </div>
                   <br>
@@ -127,6 +128,7 @@
                       placeholder="Ingrese su email"
                       type="text"
                       name="email"
+                      required
                     />
                   </label>
                   <br />
@@ -134,7 +136,7 @@
             </section>
             
     
-              <section class="usuario-foto">
+              <section class="sobre-adopcion">
                 <fieldset>
                     <h3 class="titulos-form">Sobre la adopcion</h3>
                     <label>
@@ -148,10 +150,10 @@
                     <br />
                     <br />
                     <div>
-                        <textarea name="descripcion mascota" rows="10" cols="40">¿Por qué deseas adoptar esta mascota en especial? ... </textarea>
+                        <textarea name="descripcion mascota" rows="10" cols="40" required>¿Por qué deseas adoptar esta mascota en especial? ... </textarea>
                     </div>
                     <br>
-                    <div class="formaNotif">
+                    <div class="preguntaOtraMascota">
                         <p>¿Actualmente tienes otras mascotas?</p>
                           <br>
                           <label class="container">SI
@@ -175,7 +177,7 @@
                     </div>
                 </fieldset>
                 
-                <button class="boton-registrarse" type="submit">Adoptar</button>
+                <button class="boton-adoptar" type="submit">Adoptar</button>
               </section>
             </form>
           </section>
