@@ -28,6 +28,39 @@ header img{
 
 /* FIN HEADER */
 
+/* NAV */
+nav{
+  padding: 3vh;
+  position: relative; /* Para que este delante del fondo que hacemos mas adelante*/
+}
+
+nav ul{
+  list-style-type: none;/*sacamos puntitos*/
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;/*los ubicamos arriba*/
+}
+  
+nav ul li{
+  margin: 0 0.5em;/*Los separamos un poquito*/
+}
+ 
+li > a{
+  text-decoration:none ; /*sacamos subrayado*/
+  text-transform: uppercase;
+  font-size: 3.2vh;
+  font-family: 'Roboto Condensed', sans-serif;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  transition: color 0.5s ease-in-out;
+}
+
+li > a:hover{
+  color: rgb(215, 150, 228);
+}
+
+
 /* MAIN */
 .portada{
   background-image: url(../fotos/perro_portada1.jpg);
@@ -40,7 +73,7 @@ header img{
   position: relative;
   color: white;
   text-align: center;
-  padding: 20vh 0;
+  padding: 6vh 0;
 }
 
 .portada h1{
