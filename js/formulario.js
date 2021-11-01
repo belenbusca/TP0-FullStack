@@ -13,8 +13,8 @@ const campos = {
 	telefono: false
 }
 
-const validarFormulario = (e) => {
-	switch (e.target.name) {
+const validarFormulario = (evento) => {
+	switch (evento.target.name) {
 		case "nombre":
 			validarCampo(expresiones.nombre, e.target, 'nombre');
 		break;
@@ -47,12 +47,12 @@ const validarCampo = (expresion, input, campo) => {
 
 
 inputs.forEach((input) => {
-	input.addEventListener('keyup', validarFormulario);
-	input.addEventListener('blur', validarFormulario);
+	input.addEventListener('keyup', validarFormulario); //despues de que se toca una tecla comprueba los campos
+	input.addEventListener('blur', validarFormulario); // tambien cuando se toca fuera del formulario se comprueban los campos
 });
 
-formulario.addEventListener('submit', (e) => {
-	e.preventDefault();
+formulario.addEventListener('submit', (evento) => {
+	evento.preventDefault();
 
 	const terminos = document.getElementById('terminos');
 	if(campos.nombre && campos.correo && campos.telefono && terminos.checked ){
