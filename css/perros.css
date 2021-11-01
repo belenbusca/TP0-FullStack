@@ -144,13 +144,12 @@ ul{
 
 .card-body ul{
 	font-size: 95%;
+  padding-left: 3vh;
 }
 
-.card-body li{
+.texto p{
   font-family: 'Abel', sans-serif;
   color: white;
-  text-transform: uppercase;
-  display: flex;
 }
 
 .card:hover{
@@ -158,8 +157,15 @@ ul{
   background-color: rgb(150, 144, 135);
 }
 
+.texto{
+  display: flex;
+  gap: 2vh;
+  padding-bottom: 3vh;
+}
+  
 .icon{
-  font-size: 2vh;
+  font-size: 2.5vh;
+  color: white;
 }
 
 span {
@@ -209,7 +215,7 @@ footer{
   padding: 2vh;
 }
 
-i{
+.contacto i{
   font-size: 40px;
 }
 

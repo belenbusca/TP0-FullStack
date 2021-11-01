@@ -11,31 +11,44 @@ html{
 /* HEADER */
 header{
   background-color: rgb(122, 6, 133);
-  display: flex;
   height: 10vh;
+  width: 100%;
+  display: flex;
+  top: 0;
+  padding-left: 15%;
+  align-items: center;
+}
+
+header h2{
   color: white;
   font-family: 'Balsamiq Sans', cursive;
-  align-items: center;
-  padding-left: 25vh;
-  gap: 5%;
+  margin-left: 0.5em;
 }
+
+header img{
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
 /* FIN HEADER */
 
 
 /* NAV */
 nav{
   padding: 3vh;
-  position: relative;
+  position: relative; /* Para que este delante del fondo que hacemos mas adelante*/
 }
 
-ul{
+nav ul{
   list-style-type: none;/*sacamos puntitos*/
   display: flex;
+  flex-wrap: wrap;
+  align-items: center;
   justify-content: center;/*los ubicamos arriba*/
 }
   
-ul li{
-  margin: 0 2.5vh;/*Los separamos un poquito*/
+nav ul li{
+  margin: 0 0.5em;/*Los separamos un poquito*/
 }
  
 li > a{
@@ -43,39 +56,27 @@ li > a{
   text-transform: uppercase;
   font-size: 3.2vh;
   font-family: 'Roboto Condensed', sans-serif;
-  color: white;
+  color: rgb(255, 255, 255);
   cursor: pointer;
   transition: color 0.5s ease-in-out;
 }
 
- li > a:hover{
-  color: rgb(178, 80, 197);
+li > a:hover{
+  color: rgb(215, 150, 228);
 }
 /* FIN NAV */
 
 
 /* MAIN */
 .portada{
-  background-image: url("../fotos/portadaInicio.jpg");
-  background-blend-mode: darken;
-  height: 75vh;
+  background-image: url(../fotos/portada_Inicio3.jpg);
   background-position: center center;
   background-size: cover;
-  position: relative;
+  height: 78vh;
+  min-height: 1rem;
 }
 
-/* PARA OSCURECER LA IMAGEN DEL FONDO */
-.portada::before{
-  content:''; /* existe contenido */
-  position: absolute; /* para poder estirarlo */ 
-  top: 0; /* lo estiramos a todos los extremos de la portada */
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-color: rgba(0, 0, 0, 0.26);
-}
-
-.portada section{
+.portada div{
   position: relative; /*Para que el texto este adelante del fondo negro transparente*/
   color: white;
   text-align: center;
@@ -100,12 +101,11 @@ li > a{
 .principal{
   display: flex;
   flex-direction: column;
-  padding: 13vh 25vh 5vh 25vh;
+  margin: 5em 7em 5em 7em;
 }
 
 .descripcionYFoto{
   display: flex;
-  gap: 15vh;
 }
 
 .descripcion{
@@ -125,63 +125,60 @@ li > a{
   font-size: 3vh;
 }
 
-.textoMapa{
-  padding-right: 25vh;
-}
-
 .imgDescripcion{
   margin-top: 9vh;
 }    
 
 .inferior{
   display: flex;
-  justify-content: space-between;
+  margin: 5em 7em 5em 7em;
 }
 
-.iframeYTitulo{
-  flex-direction: column;
-  padding: 13vh 25vh 5vh 25vh;
-}
-
-#imgIzquierdo{
-  margin-top: 17.5vh;  
+iframe{
+  height: 70vh;
+  width: 70vh;
+  margin: 5vh;
 }
 
 /* FIN MAIN */
 
 
 /* FOOTER */
-.contacto-general{
-    display: flex;
-    padding: 0px 350px;
-    justify-content: space-between;
-  }
-  
-  .contacto{
-    display: flex;
-    gap: 10px;
-  }
-  
-  .texto-contactanos{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 2vh;
-  }
-  
-  .contacto-icon{
-    font-size: 40px;
-  }
-  
-  footer{
-    background-color: rgb(122, 6, 133);
-    color: white;
-    display: flex;
-    justify-content: center;
-    padding: 15px;
-    margin-top: 50px;
-    font-family: 'Roboto Condensed', sans-serif;
-    flex-direction: column;
-    gap: 20px;
-  }
+
+footer{
+  background-color: rgb(122, 6, 133);
+  color: white;
+  font-family: 'Roboto Condensed', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  padding: 2vh;
+}
+
+#texto-contactanos{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#contacto-general{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.contacto{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2vh;
+}
+
+i{
+  font-size: 40px;
+}
+
 /*FIN FOOTER*/
