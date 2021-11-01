@@ -63,7 +63,7 @@ li > a:hover{
 
 /* MAIN */
 .portada{
-  background-image: url(../fotos/perro_portada1.jpg);
+  background-image: url(../fotos/categoriaExotico/portada10.jpg);
   background-position: center center;
   background-size: cover;
   height: 50vh;
@@ -146,20 +146,9 @@ ul{
 	font-size: 95%;
 }
 
-.card-body li{
-  font-family: 'Abel', sans-serif;
-  color: white;
-  text-transform: uppercase;
-  display: flex;
-}
-
 .card:hover{
   box-shadow: 3px 3px 8px hsl(0, 0%, 70%);
   background-color: rgb(150, 144, 135);
-}
-
-.icon{
-  font-size: 2vh;
 }
 
 span {
